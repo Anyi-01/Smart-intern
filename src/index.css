@@ -458,7 +458,7 @@ img { max-width: 100%; height: auto; }
   .sidebar { width: 100%; height: auto; }
   .app-shell { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr; }
-  .hero { min-height: auto; padding: 2rem 1rem; }
+  .hero { padding: 2rem 1rem; }
 }
 
 
@@ -783,95 +783,6 @@ textarea {
 .sl { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--g500); cursor: pointer; }
 .sl:hover { color: var(--blue); }
 
-/* ─────────────────────────────────────────
-   AUTH
-───────────────────────────────────────── */
-.auth {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #e0f2fe, #e8edf5 50%, #f0f4ff);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.ac {
-  background: #fff;
-  border-radius: 20px;
-  padding: 2.5rem;
-  width: 100%;
-  max-width: 460px;
-  box-shadow: var(--shm);
-}
-
-.ac h2 { font-family: var(--fh); font-size: 1.8rem; font-weight: 800; margin-bottom: .35rem; }
-.sub   { color: var(--g500); font-size: .9rem; margin-bottom: 1.75rem; }
-
-.rtog { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1.5rem; }
-
-.rb {
-  border: 1.5px solid var(--g200);
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px;
-  cursor: pointer;
-  text-align: center;
-  transition: all .15s;
-}
-.rb.active { border-color: var(--blue); background: var(--blue-l); }
-.rb strong { display: block; font-family: var(--fh); font-size: .95rem; color: var(--g800); }
-.rb.active strong { color: var(--blue); }
-.rb span   { font-size: .78rem; color: var(--g500); }
-
-.fg2 { margin-bottom: 1.1rem; }
-.fg2 label { display: block; font-size: .88rem; font-weight: 500; color: var(--g700); margin-bottom: 6px; }
-
-.iw { position: relative; }
-.iw svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--g400); width: 16px; height: 16px; }
-.iw input {
-  width: 100%;
-  padding: 10px 12px 10px 38px;
-  border: 1.5px solid var(--g200);
-  border-radius: 10px;
-  font-family: var(--fb);
-  font-size: .9rem;
-  background: var(--g50);
-  outline: none;
-  transition: border .15s;
-}
-.iw input:focus { border-color: var(--blue); background: #fff; }
-
-.frow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-  font-size: .85rem;
-}
-.frow label { display: flex; align-items: center; gap: 7px; color: var(--g600); cursor: pointer; }
-.frow a     { color: var(--blue); cursor: pointer; }
-
-.bf {
-  width: 100%;
-  padding: 12px;
-  background: var(--blue);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-family: var(--fb);
-  font-size: .95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background .15s;
-}
-.bf:hover { background: #1d4ed8; }
-
-.af { text-align: center; margin-top: 1.25rem; font-size: .88rem; color: var(--g600); }
-.af a { color: var(--blue); cursor: pointer; font-weight: 600; }
-
-.bh { margin-top: 1.25rem; color: var(--g500); font-size: .85rem; cursor: pointer; }
-.bh:hover { color: var(--blue); }
 
 /* ─────────────────────────────────────────
    APP SHELL

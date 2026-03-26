@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "../ui/Icon";
+import "./signUp.css"
 
 export default function Signup({ onLogin, onBack }) {
   const [role, setRole] = useState("student");
@@ -84,7 +85,7 @@ export default function Signup({ onLogin, onBack }) {
         </button>
 
         <p className="af">
-          Already have an account? <a onClick={onLogin}>Sign in</a>
+          Already have an account? <a onClick={onLogin}>LogIn</a>
         </p>
       </div>
 

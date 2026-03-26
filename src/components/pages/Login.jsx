@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "../ui/Icon";
+import "./login.css"
 
 export default function Login({ onLogin, onSignup, onBack }) {
   const [role, setRole]       = useState("student");
@@ -10,12 +11,11 @@ export default function Login({ onLogin, onSignup, onBack }) {
   return (
     <div className="auth">
       <div className="ac">
-        <h2>Sign In</h2>
+        <h2>Login In</h2>
         <p className="sub">Enter your credentials to access your account</p>
 
-        {/* Role toggle */}
-        <p style={{ fontSize: ".82rem", color: "#4b5563", marginBottom: "10px" }}>I am a:</p>
-        <div className="rtog">
+        
+        <div className="role">
           {[
             ["student", "Student",  "Looking for internships"],
             ["company", "Company",  "Hiring interns"],
@@ -31,8 +31,7 @@ export default function Login({ onLogin, onSignup, onBack }) {
           ))}
         </div>
 
-        {/* Email */}
-        <div className="fg2">
+        <div className="m2">
           <label>Email Address</label>
           <div className="iw">
             <Icon name="mail" size={16} />
@@ -45,21 +44,20 @@ export default function Login({ onLogin, onSignup, onBack }) {
           </div>
         </div>
 
-        {/* Password */}
         <div className="fg2">
           <label>Password</label>
           <div className="iw">
             <Icon name="lock" size={16} />
             <input
               type="password"
-              placeholder="••••••••"
+              placeholder="*************"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
         </div>
 
-        {/* Remember / Forgot */}
+
         <div className="frow">
           <label>
             <input
