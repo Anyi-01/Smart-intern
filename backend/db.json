@@ -1,0 +1,115 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Anyi Mbarga",
+      "email": "anyi@student.com",
+      "password": "hashed_password_1",
+      "course": "Computer Science",
+      "skills": ["React", "JavaScript", "Node.js"],
+      "bio": "Passionate frontend developer looking for internship opportunities.",
+      "applications": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "Fatima Njoku",
+      "email": "fatima@student.com",
+      "password": "hashed_password_2",
+      "course": "Information Technology",
+      "skills": ["Python", "Data Analysis", "SQL"],
+      "bio": "Data enthusiast eager to apply skills in a real-world setting.",
+      "applications": [3]
+    }
+  ],
+
+  "companies": [
+    {
+      "id": 1,
+      "name": "TechCorp Africa",
+      "email": "hr@techcorp.com",
+      "password": "hashed_password_3",
+      "industry": "Software Development",
+      "location": "Lagos, Nigeria",
+      "website": "https://techcorp.com",
+      "description": "A leading tech company building solutions for Africa.",
+      "postedInternships": [1, 2]
+    },
+    {
+      "id": 2,
+      "name": "DataVision Ltd",
+      "email": "careers@datavision.com",
+      "password": "hashed_password_4",
+      "industry": "Data & Analytics",
+      "location": "Nairobi, Kenya",
+      "website": "https://datavision.com",
+      "description": "We turn raw data into powerful business insights.",
+      "postedInternships": [3]
+    }
+  ],
+
+  "internships": [
+    {
+      "id": 1,
+      "companyId": 1,
+      "title": "Frontend Developer Intern",
+      "description": "Work on building React-based UI components for our web platform.",
+      "requirements": ["React", "JavaScript", "CSS"],
+      "location": "Remote",
+      "duration": "3 months",
+      "stipend": "$300/month",
+      "deadline": "2025-08-01",
+      "status": "open"
+    },
+    {
+      "id": 2,
+      "companyId": 1,
+      "title": "Backend Developer Intern",
+      "description": "Assist in building and maintaining REST APIs using Node.js and Express.",
+      "requirements": ["Node.js", "Express", "MySQL"],
+      "location": "On-site",
+      "duration": "6 months",
+      "stipend": "$400/month",
+      "deadline": "2025-07-15",
+      "status": "open"
+    },
+    {
+      "id": 3,
+      "companyId": 2,
+      "title": "Data Analyst Intern",
+      "description": "Help analyse business data and generate insight reports.",
+      "requirements": ["Python", "SQL", "Excel"],
+      "location": "Hybrid",
+      "duration": "4 months",
+      "stipend": "$350/month",
+      "deadline": "2025-09-01",
+      "status": "open"
+    }
+  ],
+
+  "applications": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "internshipId": 1,
+      "status": "pending",
+      "appliedAt": "2025-06-10",
+      "coverLetter": "I am very passionate about frontend development and would love to grow at TechCorp."
+    },
+    {
+      "id": 2,
+      "studentId": 1,
+      "internshipId": 2,
+      "status": "accepted",
+      "appliedAt": "2025-06-12",
+      "coverLetter": "I have been learning Node.js and would love to apply my skills here."
+    },
+    {
+      "id": 3,
+      "studentId": 2,
+      "internshipId": 3,
+      "status": "rejected",
+      "appliedAt": "2025-06-15",
+      "coverLetter": "Data analysis is my passion and DataVision seems like the perfect place to grow."
+    }
+  ]
+}
