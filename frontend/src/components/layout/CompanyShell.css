@@ -1,0 +1,17 @@
+/* ─────────────────────────────────────────
+   STAT CARDS
+───────────────────────────────────────── */
+.sg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.75rem; }
+
+.sc { background: #fff; border-radius: var(--r); padding: 1.5rem; box-shadow: var(--sh); }
+
+.si {
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1rem;
+}
+.si svg { width: 22px; height: 22px; }
+
+.sl2 { font-size: .82rem; color: var(--g500); margin-bottom: 4px; }
+.sv  { font-family: var(--fh); font-size: 1.8rem; font-weight: 800; color: var(--g900); }
